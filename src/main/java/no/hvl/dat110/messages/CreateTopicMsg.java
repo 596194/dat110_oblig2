@@ -27,7 +27,7 @@ public class CreateTopicMsg extends Message {
     	public String toString() {
     	return "CreateTopicMsg [ topic=" + topic + super.toString() + "]";
     	}
-    }
+    
 
 	// TODO: 
 	// Implement object variables - a topic is required
