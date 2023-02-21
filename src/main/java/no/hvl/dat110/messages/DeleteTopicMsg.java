@@ -4,6 +4,9 @@ public class DeleteTopicMsg extends Message {
 
 	// message sent from client to create topic on the broker
 	// Object variable
+
+	// TODO:
+	// Implement object variables - a topic is required
 	private String topic;
 	
 	// Constructor
@@ -11,6 +14,11 @@ public class DeleteTopicMsg extends Message {
 		super(MessageType.DELETETOPIC, user);
 		this.topic=topic;
 	}
+
+	// TODO:
+	// Complete the constructor, get/set-methods, and toString method
+	// as described in the project text
+
 	// get-method
 	public String getTopic() {
 		return topic;
