@@ -18,7 +18,7 @@ public class SubscribeMsg extends Message {
         		super(MessageType.SUBSCRIBE, user);
         		this.topic=topic;
     }
-
+ 
     //get-method
     public String getTopic() {
         return topic;
@@ -31,7 +31,7 @@ public class SubscribeMsg extends Message {
     // toString method
     @Override
     public String toString() {
-        return "CreateTopicMsg [topic=" + topic + super.toString() + "]";
+        return "SubscribeTopicMsg [topic=" + topic + "]" + super.toString();
         	
     }
 

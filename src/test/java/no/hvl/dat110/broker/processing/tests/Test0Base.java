@@ -31,7 +31,6 @@ public abstract class Test0Base {
 		
 		dispatcher.start();
 		broker.start();
-		
 		// allow broker to reaching waiting for incoming connections
 		try {
 			Thread.sleep(1000);

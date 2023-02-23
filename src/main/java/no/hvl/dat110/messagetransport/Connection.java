@@ -46,7 +46,7 @@ public class Connection {
 			System.out.println("Connection: " + ex.getMessage());
 			ex.printStackTrace();
 		}
-
+ 
 	}
 
 	public boolean hasData () {

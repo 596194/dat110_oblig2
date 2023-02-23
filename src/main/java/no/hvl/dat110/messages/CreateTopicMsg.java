@@ -14,7 +14,7 @@ public class CreateTopicMsg extends Message {
 	public CreateTopicMsg(String user, String topic) {
 		super(MessageType.CREATETOPIC, user);
 		this.topic = topic;
-
+ 
 	}
 	// TODO:
 	// Complete the constructor, get/set-methods, and toString method
@@ -35,7 +35,7 @@ public class CreateTopicMsg extends Message {
 	// toString method
 	@Override
 	public String toString() {
-		return "CreateTopicMsg [ topic=" + topic + super.toString() + "]";
+		return "CreateTopicMsg [topic=" + topic + "]" + super.toString();
 	}
 }
     

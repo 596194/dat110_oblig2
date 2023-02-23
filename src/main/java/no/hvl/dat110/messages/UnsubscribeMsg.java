@@ -34,7 +34,7 @@ public class UnsubscribeMsg extends Message {
 	@Override
 	public String toString() {
 
-		return "CreateTopicMsg [topic=" + topic + super.toString() + "]";
+		return "UnsubscribeMsg [topic=" + topic + "]" + super.toString();
 	}
 
 }

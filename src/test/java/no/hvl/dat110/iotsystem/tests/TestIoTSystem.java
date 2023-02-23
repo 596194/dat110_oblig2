@@ -26,7 +26,7 @@ public class TestIoTSystem {
 		System.out.println("Starting broker ...");
 
 		brokerthread.start();
-
+ 
 		// allow broker to reaching waiting for incoming connections
 		try {
 			Thread.sleep(5000);

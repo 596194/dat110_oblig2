@@ -48,10 +48,12 @@ public class Client extends Thread {
 	public void disconnect() {
 
 		DisconnectMsg msg = new DisconnectMsg(user);
-
+		System.out.println(msg);
+		
 		send(msg);
 
 		connection.close();
+		
 
 	}
 
@@ -66,7 +68,8 @@ public class Client extends Thread {
 	public void unsubscribe(String topic) {
 
 		UnsubscribeMsg msg = new UnsubscribeMsg(user, topic);
-
+		System.out.println(msg);
+		
 		send(msg);
 
 	}
@@ -83,7 +86,7 @@ public class Client extends Thread {
 
 		CreateTopicMsg msg = new CreateTopicMsg(user, topic);
 
-		send(msg);
+		send(msg); 
 
 	}
 
