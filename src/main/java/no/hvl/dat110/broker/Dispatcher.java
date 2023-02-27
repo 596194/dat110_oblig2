@@ -49,7 +49,7 @@ public class Dispatcher extends Stopable {
 	public void dispatch(ClientSession client, Message msg) {
 
 		MessageType type = msg.getType();
-		System.out.println(type);
+		//System.out.println(type);
 		// invoke the appropriate handler method
 		switch (type) {
 

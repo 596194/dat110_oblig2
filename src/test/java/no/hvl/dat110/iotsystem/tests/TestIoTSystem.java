@@ -8,7 +8,7 @@ import no.hvl.dat110.broker.BrokerServer;
 import no.hvl.dat110.iotsystem.DisplayDevice;
 import no.hvl.dat110.iotsystem.TemperatureDevice;
 
-public class TestIoTSystem {
+public class TestIoTSystem { 
 
 	@Test
 	public void test() {
@@ -53,6 +53,28 @@ public class TestIoTSystem {
 			displaythread.join();
 			sensorthread.join();
 
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+
+			// allow broker thread to finish processing
+			try {
+			Thread.sleep(5000);
+			} catch (InterruptedException e) {
+			e.printStackTrace();
+			}
+
+			// we check only termination here
+			assertTrue(true);
+
+			System.out.println("IoT system stopping ...");
+		
+		/*
+		try {
+
+			displaythread.join();
+			sensorthread.join();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -61,5 +83,7 @@ public class TestIoTSystem {
 		assertTrue(true);
 
 		System.out.println("IoT system stopping ...");
+		*/
 	}
+	
 }

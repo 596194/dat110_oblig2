@@ -13,3 +13,4 @@ public class TemperatureSensor {
 		return (int) Math.ceil(temp);
 	}
 }
+ 

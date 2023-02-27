@@ -13,7 +13,7 @@ public class DisplayDevice {
 	private static final int COUNT = 10;
 		
 	public static void main (String[] args) {
-		
+		 
 		System.out.println("Display starting ...");
 		
 		// TODO - START
@@ -36,11 +36,13 @@ public class DisplayDevice {
 		display.subscribe(Common.TEMPTOPIC);
 		
 		// - receive messages on the topic
-		int i =0;
-		while(i<COUNT) {
-		System.out.println( display.receive().toString());
-		i++;
+		for(int i=0; i <COUNT; i++) {
+		//System.out.println(display.receive());
+		PublishMsg msg = (PublishMsg)display.receive();
+		System.out.println("Display:" + msg.getMessage());
+		
 		}
+		
 		// - unsubscribe from the topic
 		display.unsubscribe(Common.TEMPTOPIC);
 		

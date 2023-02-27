@@ -14,7 +14,7 @@ public class Test6Publish extends Test0Base {
 
 	public static String TESTTOPIC = "testtopic";
 	
-	@Test
+	@Test 
 	public void test() {
 		
 		broker.setMaxAccept(1);

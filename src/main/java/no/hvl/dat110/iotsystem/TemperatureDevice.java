@@ -22,10 +22,9 @@ public class TemperatureDevice {
 		// - connect to the broker - user "sensor" as the user name
 		temperatur.connect();
 		// - publish the temperature(s)
-		int i=0;
-		while(i<COUNT) {
-		temperatur.publish(Common.TEMPTOPIC, Integer.toString(sn.read()));
-		i++;
+		for(int i=0; i<COUNT; i++) { 
+			int read = sn.read();
+		temperatur.publish(Common.TEMPTOPIC, Integer.toString(read));
 		}
 		// - disconnect from the broker
 		temperatur.disconnect(); 
