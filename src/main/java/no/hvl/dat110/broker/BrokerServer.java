@@ -10,7 +10,7 @@ public class BrokerServer extends Thread {
 		
 		int port = BROKER_DEFAULTPORT;
 		
-		if (args != null) {
+		if (args != null) { 
 			if (args.length > 0) {
 				port = Integer.parseInt(args[0]);
 			}

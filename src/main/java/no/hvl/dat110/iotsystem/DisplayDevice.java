@@ -21,6 +21,8 @@ public class DisplayDevice {
 		// create a client object and use it to
 		Client display = new Client("Display", Common.BROKERHOST, Common.BROKERPORT);
 		
+		
+		
 		// - connect to the broker - use "display" as the username
 		//Storage storage = new Storage();
 		//Dispatcher dispatcher = new Dispatcher(storage);
@@ -30,7 +32,7 @@ public class DisplayDevice {
 		 
 		// - create the temperature topic on the broker
 		display.createTopic(Common.TEMPTOPIC);
-
+		
 
 		// - subscribe to the topic
 		display.subscribe(Common.TEMPTOPIC);
